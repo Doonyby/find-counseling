@@ -1,5 +1,6 @@
 package com.findCounseling.project;
 
+import com.findCounseling.project.user.UserCreator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -24,5 +25,6 @@ public class ProjectApplication {
 		System.out.println();
 
 		SpringApplication.run(ProjectApplication.class, args);
+
 	}
 }

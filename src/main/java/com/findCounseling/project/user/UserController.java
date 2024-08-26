@@ -22,4 +22,18 @@ public class UserController {
         return userService.createUser(user);
     }
 
+    @PostMapping("/update")
+    public User updateUser(@RequestBody final User user) {
+        return userService.updateUser(user);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteUser(@PathVariable String id) {
+        userService.deleteUser(id);
+    }
+
+    @GetMapping("/")
+    public Iterable<User> getAllUsers() {
+        return userService.getAllUsers();
+    }
 }
