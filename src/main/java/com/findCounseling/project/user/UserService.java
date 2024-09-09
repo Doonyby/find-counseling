@@ -49,6 +49,7 @@ public class UserService {
     }
 
     public Iterable<User> getAllUsers() {
+        // Make this an admin only call
         return userRepository.findAll();
     }
 
